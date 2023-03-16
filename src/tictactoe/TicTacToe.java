@@ -5,15 +5,17 @@ import java.util.Scanner;
 
 /**
  *
- * @author User
+ * @author Ashi
  */
 public class TicTacToe {
 static Scanner sc = new Scanner(System.in);
+//2d dimensional char array with 3x3
   static char[][] board = new char[3][3];
   static char turn = 'X';
 
   public static void main(String[] args) {
     for (int i = 0; i < 3; i++) {
+        //nested loop
       for (int j = 0; j < 3; j++) {
         board[i][j] = ' ';
       }
