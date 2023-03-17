@@ -83,7 +83,7 @@ static Scanner sc = new Scanner(System.in);
     }
     return false;
   }
-
+//print board pattern before players start game
   static void printBoard() {
     for (int i = 0; i < 3; i++) {
       System.out.println(" " + board[i][0] + " | " + board[i][1] + " | " + board[i][2]);
