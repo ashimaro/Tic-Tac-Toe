@@ -46,6 +46,7 @@ static Scanner sc = new Scanner(System.in);
     return checkRow(row) || checkCol(col) || checkDiag(row, col);
   }
 
+  //method if the row contains a winning combination for the player whose turn it currently is
   static boolean checkRow(int row) {
     for (int i = 0; i < 3; i++) {
       if (board[row][i] != turn) {
@@ -54,7 +55,7 @@ static Scanner sc = new Scanner(System.in);
     }
     return true;
   }
-
+//method if the column contains a winning combination for the player whose turn it currently is
   static boolean checkCol(int col) {
     for (int i = 0; i < 3; i++) {
       if (board[i][col] != turn) {
