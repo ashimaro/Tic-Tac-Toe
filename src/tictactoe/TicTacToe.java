@@ -66,7 +66,7 @@ static Scanner sc = new Scanner(System.in);
   }
 
   static boolean checkDiag(int row, int col) {
-    if (row == col) {
+    if (row == col) { //check if all cells are 'X' or "O"
       for (int i = 0; i < 3; i++) {
         if (board[i][i] != turn) {
           return false;
